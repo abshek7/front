@@ -163,7 +163,7 @@ function Home({ products }) {
 
   return (
     <div>
-      <h1>MAJELELLO.COM</h1>
+      <h1>KAFKA</h1>
       <div className='rbord'>
         <div className='search-bar'>
           <input

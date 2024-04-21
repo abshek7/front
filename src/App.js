@@ -73,9 +73,9 @@ function Register({ onRegister }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;
-    if (!passwordRegex.test(password)) {
-      setError('Password must contain at least 8 characters, including at least one uppercase letter, one lowercase letter, one digit, and one special character');
+    // Simple password validation
+    if (password.length < 6) {
+      setError('Password must be at least 6 characters long');
       return;
     }
 
@@ -163,7 +163,7 @@ function Home({ products }) {
 
   return (
     <div>
-      <h1>KAFKA</h1>
+      <h1>presents</h1>
       <div className='rbord'>
         <div className='search-bar'>
           <input
